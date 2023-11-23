@@ -168,9 +168,18 @@
     <Compile Include="AV_Ribbon.Designer.cs">
       <DependentUpon>AV_Ribbon.cs</DependentUpon>
     </Compile>
+    <Compile Include="classes\AttendanceRecord.cs" />
+    <Compile Include="classes\AttendanceRecordCollection.cs" />
     <Compile Include="classes\Employee.cs" />
+    <Compile Include="classes\EmployeeRecordHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="listItem.Designer.cs">
+      <DependentUpon>listItem.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AttendanceVisulizerForm.resx">
       <DependentUpon>AttendanceVisulizerForm.cs</DependentUpon>
@@ -187,6 +196,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="listItem.resx">
+      <DependentUpon>listItem.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="AttendanceVisualizer_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
